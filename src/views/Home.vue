@@ -32,7 +32,7 @@
           <div
             v-for="(card, index) in cards"
             :key="`${card.title}${index}`"
-            class="column is-one-quarter"
+            class="column is-one-quarter-widescreen is-one-third-desktop is-half"
           >
             <Card :card="card" />
           </div>

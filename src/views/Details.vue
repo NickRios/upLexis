@@ -10,7 +10,7 @@
               <b-icon pack="fas" icon="chevron-left" size="is-small" />
             </div>
             <div style="margin-top: -3px;">
-              <router-link to="/">Test</router-link>
+              <router-link to="/">{{ card.title }}</router-link>
             </div>
           </div>
         </div>

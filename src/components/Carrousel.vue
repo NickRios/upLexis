@@ -2,7 +2,7 @@
   <div class="container">
     <div class="columns">
       <b-carousel
-        :autoplay="false"
+        :autoplay="true"
         :indicator="indicator"
         :pause-text="text"
         :icon-pack="iconPack"

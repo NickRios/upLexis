@@ -6,6 +6,7 @@
           v-for="(value, index) in mockData"
           :key="index"
           class="button is-primary is-outlined"
+          :class="{ 'is-active': filterSelected === value.slug }"
           @click="filterCards(value.slug)"
         >
           <div>
@@ -29,6 +30,7 @@ export default {
   name: "FilterButton",
   data() {
     return {
+      filterSelected: null,
       mockData: [
         {
           icon: "globe",
@@ -86,6 +88,7 @@ export default {
   methods: {
     filterCards(name) {
       this.$emit("filter", name);
+      this.filterSelected = name;
     }
   }
 };
@@ -107,6 +110,13 @@ export default {
 .button-class:hover {
   color: white;
   background-color: #ff6d01;
+  border-radius: 3px;
+  border: 0.1px solid #ff6d01;
+}
+
+.is-active {
+  color: white !important;
+  background-color: #ff6d01 !important;
   border-radius: 3px;
   border: 0.1px solid #ff6d01;
 }
