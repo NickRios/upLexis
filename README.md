@@ -19,7 +19,7 @@ $ git clone git@github.com:NickRios/upLexis.git
 $ yarn install
 
 # Run the application in development mode
-$ yarn dev
+$ yarn serve
 
 ```
 
